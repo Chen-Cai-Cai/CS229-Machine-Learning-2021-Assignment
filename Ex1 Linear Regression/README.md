@@ -82,3 +82,16 @@ Theta computed from the normal equations:<br>
 
 Predicted price of a 1650 sq-ft, 3 br house (using normal equations):<br>
  $293081.464335<br>
+
+## submit result
+==                                   Part Name |     Score | Feedback<br>
+==                                   --------- |     ----- | --------<br>
+==                            Warm-up Exercise |  10 /  10 | Nice work!<br>
+==           Computing Cost (for One Variable) |  40 /  40 | Nice work!<br>
+==         Gradient Descent (for One Variable) |  50 /  50 | Nice work!<br>
+==                       Feature Normalization |   0 /   0 | Nice work!<br>
+==     Computing Cost (for Multiple Variables) |   0 /   0 | Nice work!<br>
+==   Gradient Descent (for Multiple Variables) |   0 /   0 | Nice work!<br>
+==                            Normal Equations |   0 /   0 | Nice work!<br>
+==                                   --------------------------------<br>
+==                                             | 100 / 100 |<br>
