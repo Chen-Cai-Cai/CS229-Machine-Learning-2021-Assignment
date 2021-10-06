@@ -1,45 +1,45 @@
-# Programming&nbspAssignment:&nbspLinear&nbspRegression
+# Programming Assignment: Linear Regression
 
 ## ex1
 
-Diagonal&nbspMatrix<br>
+Diagonal Matrix<br>
 
-&nbsp&nbsp&nbsp1&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0&nbsp<br>
-&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp1&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0<br>
-&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp1&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0<br>
-&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp1&nbsp&nbsp&nbsp0<br>
-&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp1<br>
+   1   0   0   0   0 <br>
+   0   1   0   0   0<br>
+   0   0   1   0   0<br>
+   0   0   0   1   0<br>
+   0   0   0   0   1<br>
 
-Program&nbsppaused.&nbspPress&nbspenter&nbspto&nbspcontinue.<br>
-Plotting&nbspData&nbsp...<br>
+Program paused. Press enter to continue.<br>
+Plotting Data ...<br>
 
 ![image-20211006175846009](./pic/image-20211006175846009.png)
 
-Program&nbsppaused.&nbspPress&nbspenter&nbspto&nbspcontinue.<br>
+Program paused. Press enter to continue.<br>
 
-Testing&nbspthe&nbspcost&nbspfunction&nbsp...<br><br>
-With&nbsptheta&nbsp=&nbsp[0&nbsp;&nbsp0]<br>
-Cost&nbspcomputed&nbsp=&nbsp32.072734<br>
-Expected&nbspcost&nbspvalue&nbsp(approx)&nbsp32.07<br>
+Testing the cost function ...<br><br>
+With theta = [0 ; 0]<br>
+Cost computed = 32.072734<br>
+Expected cost value (approx) 32.07<br>
 
-With&nbsptheta&nbsp=&nbsp[-1&nbsp;&nbsp2]<br>
-Cost&nbspcomputed&nbsp=&nbsp54.242455<br>
-Expected&nbspcost&nbspvalue&nbsp(approx)&nbsp54.24<br>
-Program&nbsppaused.&nbspPress&nbspenter&nbspto&nbspcontinue.<br>
+With theta = [-1 ; 2]<br>
+Cost computed = 54.242455<br>
+Expected cost value (approx) 54.24<br>
+Program paused. Press enter to continue.<br>
 
-Running&nbspGradient&nbspDescent&nbsp...<br>
-Theta&nbspfound&nbspby&nbspgradient&nbspdescent:<br>
+Running Gradient Descent ...<br>
+Theta found by gradient descent:<br>
 -3.630291<br>
 1.166362<br>
-Expected&nbsptheta&nbspvalues&nbsp(approx)<br>
-&nbsp-3.6303<br>
-&nbsp&nbsp1.1664<br>
+Expected theta values (approx)<br>
+ -3.6303<br>
+  1.1664<br>
 
-For&nbsppopulation&nbsp=&nbsp35,000,&nbspwe&nbsppredict&nbspa&nbspprofit&nbspof&nbsp4519.767868<br>
-For&nbsppopulation&nbsp=&nbsp70,000,&nbspwe&nbsppredict&nbspa&nbspprofit&nbspof&nbsp45342.450129<br>
-Program&nbsppaused.&nbspPress&nbspenter&nbspto&nbspcontinue.<br>
+For population = 35,000, we predict a profit of 4519.767868<br>
+For population = 70,000, we predict a profit of 45342.450129<br>
+Program paused. Press enter to continue.<br>
 
-Visualizing&nbspJ(theta_0,&nbsptheta_1)&nbsp...<br>
+Visualizing J(theta_0, theta_1) ...<br>
 
 ![image-20211006180021220](./pic/image-20211006180021220.png)
 
@@ -47,53 +47,53 @@ Visualizing&nbspJ(theta_0,&nbsptheta_1)&nbsp...<br>
 
 ![image-20211006180053458](./pic/image-20211006180053458.png)
 
-## ex1_mulit&nbsp
+## ex1_mulit 
 
-&nbspLoading&nbspdata&nbsp...<br>
-First&nbsp10&nbspexamples&nbspfrom&nbspthe&nbspdataset:<br>
-&nbspx&nbsp=&nbsp[2104&nbsp3],&nbspy&nbsp=&nbsp399900<br>
-&nbspx&nbsp=&nbsp[1600&nbsp3],&nbspy&nbsp=&nbsp329900<br>
-&nbspx&nbsp=&nbsp[2400&nbsp3],&nbspy&nbsp=&nbsp369000<br>
-&nbspx&nbsp=&nbsp[1416&nbsp2],&nbspy&nbsp=&nbsp232000<br>
-&nbspx&nbsp=&nbsp[3000&nbsp4],&nbspy&nbsp=&nbsp539900<br>
-&nbspx&nbsp=&nbsp[1985&nbsp4],&nbspy&nbsp=&nbsp299900<br>
-&nbspx&nbsp=&nbsp[1534&nbsp3],&nbspy&nbsp=&nbsp314900<br>
-&nbspx&nbsp=&nbsp[1427&nbsp3],&nbspy&nbsp=&nbsp198999<br>
-&nbspx&nbsp=&nbsp[1380&nbsp3],&nbspy&nbsp=&nbsp212000<br>
-&nbspx&nbsp=&nbsp[1494&nbsp3],&nbspy&nbsp=&nbsp242500<br>
-Program&nbsppaused.&nbspPress&nbspenter&nbspto&nbspcontinue.<br>
-Normalizing&nbspFeatures&nbsp...<br>
-Running&nbspgradient&nbspdescent&nbsp...<br>
+ Loading data ...<br>
+First 10 examples from the dataset:<br>
+ x = [2104 3], y = 399900<br>
+ x = [1600 3], y = 329900<br>
+ x = [2400 3], y = 369000<br>
+ x = [1416 2], y = 232000<br>
+ x = [3000 4], y = 539900<br>
+ x = [1985 4], y = 299900<br>
+ x = [1534 3], y = 314900<br>
+ x = [1427 3], y = 198999<br>
+ x = [1380 3], y = 212000<br>
+ x = [1494 3], y = 242500<br>
+Program paused. Press enter to continue.<br>
+Normalizing Features ...<br>
+Running gradient descent ...<br>
 
 ![image-20211006185535408](./pic/image-20211006185535408.png)
-Theta&nbspcomputed&nbspfrom&nbspgradient&nbspdescent:<br>
-&nbsp334302.063993<br>
-&nbsp100087.116006<br>
-&nbsp3673.548451<br>
+Theta computed from gradient descent:<br>
+ 334302.063993<br>
+ 100087.116006<br>
+ 3673.548451<br>
 
-Predicted&nbspprice&nbspof&nbspa&nbsp1650&nbspsq-ft,&nbsp3&nbspbr&nbsphouse&nbsp(using&nbspgradient&nbspdescent):<br>
-&nbsp$289314.620338<br>
-Program&nbsppaused.&nbspPress&nbspenter&nbspto&nbspcontinue.<br>
-Solving&nbspwith&nbspnormal&nbspequations...<br>
-Theta&nbspcomputed&nbspfrom&nbspthe&nbspnormal&nbspequations:<br>
-&nbsp89597.909543<br>
-&nbsp139.210674<br>
-&nbsp-8738.019112<br>
+Predicted price of a 1650 sq-ft, 3 br house (using gradient descent):<br>
+ $289314.620338<br>
+Program paused. Press enter to continue.<br>
+Solving with normal equations...<br>
+Theta computed from the normal equations:<br>
+ 89597.909543<br>
+ 139.210674<br>
+ -8738.019112<br>
 
-Predicted&nbspprice&nbspof&nbspa&nbsp1650&nbspsq-ft,&nbsp3&nbspbr&nbsphouse&nbsp(using&nbspnormal&nbspequations):<br>
-&nbsp$293081.464335<br>
+Predicted price of a 1650 sq-ft, 3 br house (using normal equations):<br>
+ $293081.464335<br>
 
 
 
-## submit&nbspresult
+## submit result
 
 ==
-==&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPart&nbspName&nbsp|&nbsp&nbsp&nbsp&nbsp&nbspScore&nbsp|&nbspFeedback
-==&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp---------&nbsp|&nbsp&nbsp&nbsp&nbsp&nbsp-----&nbsp|&nbsp--------
-==&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWarm-up&nbspExercise&nbsp|&nbsp&nbsp10&nbsp/&nbsp&nbsp10&nbsp|&nbspNice&nbspwork!
-==&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspComputing&nbspCost&nbsp(for&nbspOne&nbspVariable)&nbsp|&nbsp&nbsp40&nbsp/&nbsp&nbsp40&nbsp|&nbspNice&nbspwork!
-==&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGradient&nbspDescent&nbsp(for&nbspOne&nbspVariable)&nbsp|&nbsp&nbsp50&nbsp/&nbsp&nbsp50&nbsp|&nbspNice&nbspwork!
-==&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFeature&nbspNormalization&nbsp|&nbsp&nbsp&nbsp0&nbsp/&nbsp&nbsp&nbsp0&nbsp|&nbspNice&nbspwork!
-==&nbsp&nbsp&nbsp&nbsp&nbspComputing&nbspCost&nbsp(for&nbspMultiple&nbspVariables)&nbsp|&nbsp&nbsp&nbsp0&nbsp/&nbsp&nbsp&nbsp0&nbsp|&nbspNice&nbspwork!
-==&nbsp&nbsp&nbspGradient&nbspDescent&nbsp(for&nbspMultiple&nbspVariables)&nbsp|&nbsp&nbsp&nbsp0&nbsp/&nbsp&nbsp&nbsp0&nbsp|&nbspNice&nbspwork!
-==&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNormal&nbspEquations&nbsp|&nbsp&nbsp&nbsp0&nbsp/&nbsp&nbsp&nbsp0&nbsp|&nbspNice&nbspwork!
+==                                   Part Name |     Score | Feedback
+==                                   --------- |     ----- | --------
+==                            Warm-up Exercise |  10 /  10 | Nice work!
+==           Computing Cost (for One Variable) |  40 /  40 | Nice work!
+==         Gradient Descent (for One Variable) |  50 /  50 | Nice work!
+==                       Feature Normalization |   0 /   0 | Nice work!
+==     Computing Cost (for Multiple Variables) |   0 /   0 | Nice work!
+==   Gradient Descent (for Multiple Variables) |   0 /   0 | Nice work!
+==                            Normal Equations |   0 /   0 | Nice work!
