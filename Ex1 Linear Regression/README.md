@@ -43,7 +43,7 @@ Visualizing J(theta_0, theta_1) ...
 
 ![image-20211006180021220](./pic/image-20211006180021220.png)
 
-![image-20211006180044253](C:\Users\15218\AppData\Roaming\Typora\typora-user-images\image-20211006180044253.png)
+![image-20211006180044253](./pic/image-20211006180044253.png)
 
 ![image-20211006180053458](./pic/image-20211006180053458.png)
 
