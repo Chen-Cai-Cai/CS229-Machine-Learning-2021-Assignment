@@ -1,3 +1,7 @@
+# Programming Assignment: Logistic Regression
+
+## ex2
+
 Cost at initial theta (zeros): 0.693147  
 Expected cost (approx): 0.693  
 Gradient at initial theta (zeros) - first five values only:  
@@ -39,10 +43,20 @@ Program paused. Press enter to continue.
 Train Accuracy: 83.050847  
 Expected accuracy (with lambda = 1): 83.1 (approx)          
 
-### submit result
+## submit result
 
 ==    Regularized Logistic Regression Gradient |  15 /  15 | Nice work!  
 ==                                   --------------------------------    
 
 ==               | 100 / 100 |   
+
+## Optional (ungraded) exercises
+
+![image-20211007101856550](./pic/image-20211007101856550.png)
+
+![image-20211007101912653](./pic/image-20211007100802462.png)
+
+![image-20211007101932029](./pic/image-20211007101932029.png)
+
+![image-20211007101947031](./pic/image-20211007101947031.png)
 
