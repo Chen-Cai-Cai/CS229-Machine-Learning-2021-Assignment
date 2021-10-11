@@ -78,4 +78,4 @@ Paused - press enter to continue, q to exit:  q
 ==            One-vs-All Classifier Prediction |  20 /  20 | Nice work!  
 ==          Neural Network Prediction Function |  30 /  30 | Nice work!  
 ==                                   --------------------------------  
-== | 100 / 100 |  
+== | 100 / 100 |
