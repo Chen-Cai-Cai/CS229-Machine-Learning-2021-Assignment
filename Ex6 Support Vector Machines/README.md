@@ -383,3 +383,167 @@ Spam Classification: 1
 ==                                   --------------------------------  
 ==                                             | 100 / 100 |  
 
+## Optional (ungraded) exercise
+
+### Try your own emails
+
+In this part, we only need modify filename to try spam classifer on different sample.
+
+```octave
+% ex6_spam.m
+%% =================== Part 6: Try Your Own Emails =====================
+%  Now that you've trained the spam classifier, you can use it on your own
+%  emails! In the starter code, we have included spamSample1.txt,
+%  spamSample2.txt, emailSample1.txt and emailSample2.txt as examples. 
+%  The following code reads in one of these emails and then uses your 
+%  learned SVM classifier to determine whether the email is Spam or 
+%  Not Spam
+
+% Set the file to be read in (change this to spamSample2.txt,
+% emailSample1.txt or emailSample2.txt to see different predictions on
+% different emails types). Try your own emails as well!
+filename = 'spamSample1.txt';
+
+% Read and predict
+file_contents = readFile(filename);
+word_indices  = processEmail(file_contents);
+x             = emailFeatures(word_indices);
+p = svmPredict(model, x);
+
+fprintf('\nProcessed %s\n\nSpam Classification: %d\n', filename, p);
+fprintf('(1 indicates spam, 0 indicates not spam)\n\n');
+```
+
+My spam email is showed below, which comes from smartphones2020-space@quoramail.com.
+
+```
+Smart Phones News · 467k followers
+The latest smart phones specifications, updates and comparisons.
+
+Faryad Hussain, Blogger (2018-present)
+Posted Sep 27
+Xiaomi CIVI Launched6.55" FHD+ 120Hz Curved OLEDDolby Vision... Read More »
+
+9 upvotes
+
+Faryad Hussain, Blogger (2018-present)
+Posted Sep 20
+iQOO Z5 specifications.Launching on September 23 in China & On September 27 in India🇮🇳- 6.5" FHD+ LCD, 120hz refresh rate HDR 10+ & 10bit color... Read More »
+
+Why is the iPhone 13 Pro and the iPhone13 Pro Max use the outdated 120Hz display instead of using a 240Hz display like the Aquos R6 phone?
+Kyle Krebs, B.S. Electrical Engineering & Mathematics, The University of Utah (2019)
+Written Sep 25
+For the same reason most everyone else doesn’t use it, and likely won’t use it anytime soon. For the same reason TV manufacturers actually stopped producing 240Hz refresh r...
+
+Read More »
+```
+
+The classification results are shown in the table below.
+
+|  Sample  | Actual | Result |
+|  ----  | ----  |  ----  |
+| emailSample1.txt | non-spam | non-spam |
+| emailSample2.txt | non-spam | non-spam |
+| spamSample1.txt | spam | spam |
+| spamSample2.txt | spam | spam |
+| myspam.txt | spam | non-spam |
+
+Input:     
+
+\=\=\== Processed Email ====    
+
+anyon know how much it cost to host a web portal well it depend on how mani    
+visitor you re expect thi can be anywher from less than number buck a month    
+to a coupl of dollarnumb you should checkout httpaddr or perhap amazon ecnumb    
+if your run someth big to unsubscrib yourself from thi mail list send an    
+email to emailaddr    
+
+\==\==\=\=\=\=\=\=\=\=\=\==\=\=\=\=\=\=====    
+
+Processed emailSample1.txt    
+
+Spam Classification: 0    
+(1 indicates spam, 0 indicates not spam)    
+
+
+\=\=\== Processed Email ====    
+
+folk my first time post have a bit of unix experi but am new to linux just    
+got a new pc at home dell box with window xp ad a second hard disk for linux    
+partit the disk and have instal suse number number from cd which went fine    
+except it didn t pick up my monitor i have a dell brand enumberfpp number lcd    
+flat panel monitor and a nvidia geforcenumb tinumb video card both of which    
+ar probabl too new to featur in suse s default set i download a driver from    
+the nvidia websit and instal it us rpm then i ran saxnumb as wa recommend in    
+some post i found on the net but it still doesn t featur my video card in the    
+avail list what next anoth problem i have a dell brand keyboard and if i hit    
+cap lock twice the whole machin crash in linux not window even the on off    
+switch is inact leav me to reach for the power cabl instead if anyon can help    
+me in ani wai with these prob i d be realli grate i ve search the net but    
+have run out of idea or should i be go for a differ version of linux such as    
+redhat opinion welcom thank a lot peter irish linux user group emailaddr    
+httpaddr for un subscript inform list maintain emailaddr    
+
+\==\==\=\=\=\=\=\=\=\=\=\==\=\=\=\=\=\=====    
+
+Processed emailSample2.txt    
+
+Spam Classification: 0    
+(1 indicates spam, 0 indicates not spam)    
+
+
+\=\=\== Processed Email ====    
+
+do you want to make dollarnumb or more per week if you ar a motiv and qualifi    
+individu i will person demonstr to you a system that will make you dollarnumb    
+number per week or more thi is not mlm call our number hour pre record numbe    r
+to get the detail number number number i need peopl who want to make seriou    
+monei make the call and get the fact invest number minut in yourself now    
+number number number look forward to your call and i will introduc you to    
+peopl like yourself who ar current make dollarnumb number plu per week number    
+number number numberljgvnumb numberleannumberlrmsnumb    
+numberwxhonumberqiytnumb numberrjuvnumberhqcfnumb numbereidbnumberdmtvlnumb    
+
+\==\==\=\=\=\=\=\=\=\=\=\==\=\=\=\=\=\=====    
+
+Processed spamSample1.txt    
+
+Spam Classification: 1    
+(1 indicates spam, 0 indicates not spam)    
+
+
+\=\=\== Processed Email ====    
+
+best bui viagra gener onlin viagra numbermg x number pill dollarnumb free    
+pill reorder discount top sell number qualiti satisfact guarante we accept    
+visa master e check payment number satisfi custom httpaddr    
+
+\==\==\=\=\=\=\=\=\=\=\=\==\=\=\=\=\=\=====    
+
+Processed spamSample2.txt    
+
+Spam Classification: 1    
+(1 indicates spam, 0 indicates not spam)    
+
+
+\=\=\== Processed Email ====    
+
+smart phone new numberk follow the latest smart phone specif updat and    
+comparison faryad hussain blogger number present post sep number xiaomi civi    
+launchednumb number fhd numberhz curv oleddolbi vision read more number upvot    
+faryad hussain blogger number present post sep number iqoo znumber specif    
+launch on septemb number in china on septemb number in india number number    
+fhd lcd numberhz refresh rate hdr number numberbit color read more why is the    
+iphon number pro and the iphonenumb pro max us the outdat numberhz displai    
+instead of us a numberhz displai like the aquo rnumber phone kyle kreb b s    
+electr engin mathemat the univers of utah number written sep number for the    
+same reason most everyon els doesn t us it and like won t us it anytim soon    
+for the same reason tv manufactur actual stop produc numberhz refresh r read    
+more    
+
+\==\==\=\=\=\=\=\=\=\=\=\==\=\=\=\=\=\=====    
+
+Processed myspam.txt    
+
+Spam Classification: 0    
+(1 indicates spam, 0 indicates not spam)    
